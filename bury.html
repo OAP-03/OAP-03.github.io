@@ -1,102 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <!-- Imports the font "Bitter" from Google Fonts, so I can use it in my website. -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter">
+    <!-- Sets the title of my website. -->
     <title>Bury Me at Makeout Creek</title>
 
     <style>
-        * {
-            box-sizing: border-box;
-        }
+         /* the * is everything in my website */
+       * {
+           /* this creates a border around my webpage and helps make my webpage change size with window size */
+           box-sizing: border-box;
+       }
 
-        body {
-            font-family: Bitter;
-            padding: 10px;
+
+       /* this changes everything in my body paragraphs to what I want it to be */
+       body {
+           /* changes the font to Bitter */
+           font-family: Bitter;
+           /* makes the border between the content and the border 10 pixels */
+           padding: 10px;
+           /* changes the background color */
             background: #23374f;
         }
 
-        .header {
-            padding: 30px;
-            text-align: center;
-            background: white;
-        }
+        /* this selector changes everything in my headers (h1, h2, h3...) so it's what I want */
+       .header {
+           /* makes the padding between the content and the border 30 pixels */
+           padding: 30px;
+           /* aligns my text, so it is in the center of the page */
+           text-align: center;
+           /* sets the background to be white */
+           background: white;
+       }
 
-        h1 {
+       /* sets any h1 to this and overrides whatever I put in .header (only for h1) */
+       h1 {
+           /* sets my font */
             font-family: Times New Roman;
-            font-size: 50px;
-        }
+            /* sets my font size to 50 pixels */
+           font-size: 50px;
+       }
 
-        .topnav {
-            overflow: hidden;
+       /* designs the top navigation, so it is what I want */
+       .topnav {
+           /* prevents from any of the links / buttons from disappearing */
+           overflow: hidden;
+           /* sets the background color of the buttons */
             background-color: #737c87;
         }
 
-        .topnav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
+        /* this descendant selector will make everything in it be affected by what I code */
+       .topnav a {
+           /* makes all the content go to the left (like books) */
+           float: left;
+           /* displays the element as a block */
+           display: block;
+           /* sets the text color as white */
+           color: white;
+           /* aligns said text to be in the center */
+           text-align: center;
+           /* sets the space between my content and the border (14: top and bottom) (16: right and left) */
+           padding: 14px 16px;
+           /* no decorative lines */
+           text-decoration: none;
+       }
 
-        .topnav a:hover {
+       /* formats my navigation buttons when the mouse is hovered above it */
+       .topnav a:hover {
+           /* changes the background color */
             background-color: #a2acb1;
+            //sets the text color to white
             color: white;
         }
+/* sets the text color to white */
+           color: white;
+       }
 
-        .leftcolumn {
-            float: left;
-            width: 70%;
-        }
-        .rightcolumn {
-            float: right;
-            width: 28.5%;
-        }
+       /* designs my first column */
+       .leftcolumn {
+           /* sets the column to float on the left */
+           float: left;
+           /* sets the whole width of the column, so it takes up 70% of the page */
+           width: 70%;
+       }
 
-        .card {
-            background-color: white;
-            padding: 20px;
-            margin-top: 20px;
-        }
+       /* designs my second column */
+       .rightcolumn {
+           /* makes the column float on the right of the page */
+           float: right;
+           /* sets the width of the column, so it only takes up 28.5% of the page */
+           width: 28.5%;
+       }
 
-        @media screen and (max-width: 800px) {
-            .leftcolumn, .rightcolumn {
-                width: 100%;
-                padding: 0;
-            }
-        }
+       /* makes it so my columns are displayed in a visually appealing way */
+       .card {
+           /* sets their background color to be white */
+           background-color: white;
+           /* makes the padding 20px */
+           padding: 20px;
+           /* sets the margin around my content and padding (at the top) */
+           margin-top: 20px;
+       }
 
-        @media screen and (max-width: 400px) {
-            .topnav a {
-                float: left;
-                width: 100%;
-            }
-        }
+       /* sets how my website will work on different (smaller) devices */
+       @media screen and (max-width: 800px) {
+           /* sets how both columns will work when the screen is smaller */
+           .leftcolumn, .rightcolumn {
+               /* the width will take up the whole page */
+               width: 100%;
+               /* no padding is added */
+               padding: 0;
+           }
+       }
 
-        .fit {
-            max-width: 99%;
-            max-height: 99%;
-        }
+       /* sets how my website will work on a smaller device */
+       @media screen and (max-width: 400px) {
+           /* sets up how the navigation will work when the screen is smaller */
+           .topnav a {
+               /* the navigation will float to the left */
+               float: left;
+               /* the width will take up the whole page (left-right) */
+               width: 100%;
+           }
+       }
+
+       /* this sets how an image or a video will fit onto the page */
+       .fit {
+           /* prevents the image from getting bigger than 99% of the width of the page */
+           max-width: 99%;
+           /* prevents the image from getting taller than 99% of the page */
+           max-height: 99%;
+       }
     </style>
 </head>
 
+
 <body>
+<!-- This "div" tag holds my content for my header class. -->
 <div class="header">
+    <!-- Makes a heading to be displayed onto the webpage. -->
     <h1>Bury Me At Makeout Creek</h1>
+    <!-- Creates normal text to be displayed. -->
     <p>Created on November 11, 2014</p>
 </div>
 
+<!-- This "div" tag holds my content for my navigation -->
 <div class="topnav">
+    <!-- Creates a link to go in top navigation, heading to the main page with the display text of "main page." -->
     <a href = "https://oap-03.github.io">Main Page</a>
 </div>
 
+<!-- Holds everything for my row class (and makes sure the columns are in a row, next to each other)-->
 <div class="row">
+    <!-- Holds all of my content for my left column -->
     <div class="leftcolumn">
+        <!-- Makes the left column a card -->
         <div class="card">
+            <!-- The next two lines make my heading and my body paragraph text -->
             <h2>Overview</h2>
             <p>This is Mitski's third album, which she wrote when she was exhausted from having to make money after college. She learned guitar for it, and wrote the whole album by herself. The album features ten tracks, and was released in 2014.</p>
 
+            <!-- I list the tracks here, using an ordered list <ol> -->
             <h4>The Tracks:</h4>
             <ol>
                 <li> Texas Reznikoff
@@ -111,6 +176,7 @@
                 <li> Last Words of a Shooting Star
             </ol>
 
+            <!-- Makes a bulleted list of my reviews-->
             <h2>My Review</h2>
             <ul>
                 <li> Bury Me At Makeout Creek pushed Mitski into having more fans because the album is such a banger! It has the same emotion as her past two albums but is more "digestible" to a larger audience.
@@ -119,9 +185,12 @@
         </div>
     </div>
 
+    <!-- Holds all of my content for the right column -->
     <div class = "rightcolumn">
+        <!-- Makes it a card -->
         <div class = "card">
-            <img class="fit" src="https://i.scdn.co/image/ab67616d0000b273e90db8983ebd43b776694179" width = "1000">
+            <!-- Inserts an image into the website, max width is 500 px -->
+            <img class="fit" src="https://i.scdn.co/image/ab67616d0000b273e90db8983ebd43b776694179" width = "500" alt="Album cover">
         </div>
     </div>
 </div>
