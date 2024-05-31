@@ -8,6 +8,7 @@
     <!-- Sets the title of my website. -->
     <title>Be the Cowboy</title>
 
+
     <style>
         /* the * is everything in my website */
         * {
@@ -25,23 +26,24 @@
             background: #63080c;
         }
 
-       /* this selector changes everything in my headers (h1, h2, h3...) so it's what I want */
-       .header {
-           /* makes the padding between the content and the border 30 pixels */
-           padding: 30px;
-           /* aligns my text, so it is in the center of the page */
-           text-align: center;
-           /* sets the background to be white */
-           background: white;
-       }
+        /* this selector changes everything in my headers (h1, h2, h3...) so it's what I want */
+        .header {
+            /* makes the padding between the content and the border 30 pixels */
+            padding: 30px;
+            /* aligns my text, so it is in the center of the page */
+            text-align: center;
+            /* sets the background to be white */
+            background: white;
+        }
 
-       /* sets any h1 to this and overrides whatever I put in .header (only for h1) */
-       h1 {
-           /* sets my font */
-           font-family: Galada;
-           /* sets my font size to 50 pixels */
-           font-size: 50px;
-       }
+
+        /* sets any h1 to this and overrides whatever I put in .header (only for h1) */
+        h1 {
+            /* sets my font */
+            font-family: Galada;
+            /* sets my font size to 50 pixels */
+            font-size: 50px;
+        }
 
        /* designs the top navigation, so it is what I want */
        .topnav {
@@ -50,6 +52,7 @@
            /* sets the background color of the buttons */
            background-color: #850606;
         }
+
 
         /* this descendant selector will make everything in it be affected by what I code */
        .topnav a {
@@ -67,6 +70,7 @@
            text-decoration: none;
        }
 
+
        /* formats my navigation buttons when the mouse is hovered above it */
        .topnav a:hover {
            /* changes the background color */
@@ -74,6 +78,7 @@
            /* sets the text color to white */
            color: white;
        }
+
 
        /* designs my first column */
        .leftcolumn {
@@ -83,6 +88,7 @@
            width: 70%;
        }
 
+
        /* designs my second column */
        .rightcolumn {
            /* makes the column float on the right of the page */
@@ -90,6 +96,7 @@
            /* sets the width of the column, so it only takes up 28.5% of the page */
            width: 28.5%;
        }
+
 
        /* makes it so my columns are displayed in a visually appealing way */
        .card {
@@ -100,6 +107,7 @@
            /* sets the margin around my content and padding (at the top) */
            margin-top: 20px;
        }
+
 
        /* sets how my website will work on different (smaller) devices */
        @media screen and (max-width: 800px) {
@@ -112,6 +120,7 @@
            }
        }
 
+
        /* sets how my website will work on a smaller device */
        @media screen and (max-width: 400px) {
            /* sets up how the navigation will work when the screen is smaller */
@@ -123,6 +132,7 @@
            }
        }
 
+
        /* this sets how an image or a video will fit onto the page */
        .fit {
            /* prevents the image from getting bigger than 99% of the width of the page */
@@ -133,6 +143,7 @@
     </style>
 </head>
 
+
 <body>
 <!-- This "div" tag holds my content for my header class. -->
 <div class="header">
@@ -141,6 +152,7 @@
     <!-- Creates normal text to be displayed. -->
     <p>Released on August 17, 2018</p>
 </div>
+
 
 <!-- This "div" tag holds my content for my navigation -->
 <div class="topnav">
@@ -177,7 +189,7 @@
                 <li> Two Slow Dancers
             </ol>
 
-            <!-- Makes a bulleted list of my reviews-->
+            <!-- Makes a h2, and <ul> makes a bulleted list of my reviews-->
             <h2>My Review</h2>
             <ul>
                 <li> This album's title was inspired by a peer from college who performed with "cowboy swagger." After she graduated, she missed seeing him perform and became the cowboy. This album is about changing identity, by using accommodation, self-advancement, and self-actualization.
