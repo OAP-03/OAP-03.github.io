@@ -86,18 +86,8 @@
             /* sets the column to float on the left */
             float: left;
             /* sets the whole width of the column, so it takes up 70% of the page */
-            width: 70%;
+            width: 100%;
         }
-
-
-        /* designs my second column */
-        .rightcolumn {
-            /* makes the column float on the right of the page */
-            float: right;
-            /* sets the width of the column, so it only takes up 28.5% of the page */
-            width: 28.5%;
-        }
-
 
         /* makes it so my columns are displayed in a visually appealing way */
         .card {
@@ -112,8 +102,8 @@
 
         /* sets how my website will work on different (smaller) devices */
         @media screen and (max-width: 800px) {
-            /* sets how both columns will work when the screen is smaller */
-            .leftcolumn, .rightcolumn {
+            /* sets how my column will work when the screen is smaller */
+            .leftcolumn {
                 /* the width will take up the whole page */
                 width: 100%;
                 /* no padding is added */
